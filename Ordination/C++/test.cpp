@@ -1,3 +1,6 @@
+/*
+* @author Ionésio Junior
+*/
 #define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE SortingTest
 #include <boost/test/unit_test.hpp>
@@ -8,7 +11,6 @@
 #include "src/MergeSort.hpp"
 #include "src/QuickSort.hpp"
 #include "src/QuickMedianOfThree.hpp"
-#include <iostream>
 
 struct SortingAlgorithms{
 	//Algorithms
@@ -38,7 +40,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
 	std::copy(even, even+10, evenArray);
 	bubble->sort(evenArray,size);
 	for(int i = 0 ; i < size;i++){
-		//std::cout << evenArray[i] << std::endl;
 		BOOST_CHECK(evenOrdered[i] == evenArray[i]);	
 	}
 	
@@ -46,7 +47,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
         std::copy(even, even+10, evenArray);
         selection->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 	
@@ -54,7 +54,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
         std::copy(even, even+10, evenArray);
         insertion->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 	
@@ -62,7 +61,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
 	std::copy(even, even+10, evenArray);
        	gnome->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 
@@ -70,7 +68,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
         std::copy(even, even+10, evenArray);
         quick->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 
@@ -78,7 +75,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
         std::copy(even, even+10, evenArray);
         merge->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 
@@ -86,7 +82,6 @@ BOOST_AUTO_TEST_CASE(evenSortingTest)
         std::copy(even, even+10, evenArray);
         qMedian->sort(evenArray,size);
         for(int i = 0 ; i < size;i++){
-                //std::cout << evenArray[i] << std::endl;
                 BOOST_CHECK(evenOrdered[i] == evenArray[i]);
         }
 
