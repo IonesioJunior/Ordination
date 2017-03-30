@@ -31,7 +31,6 @@ void SelectionSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
 		//this->bidirectionalSelectionSort(array,leftIndex,rightIndex);
 		this->recursiveSimpleSelectionSort(array,leftIndex,rightIndex);
 		//this->recursiveBidirectionalSelectionSort(array,leftIndex,rightIndex);
-		this->showArray(array,size);
 	}else{
 		std::cout << "Entrou na area errada!!" << std::endl;
 	}

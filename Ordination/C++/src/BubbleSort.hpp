@@ -21,6 +21,7 @@ template <typename T> class BubbleSort {
 
 
 //BubbleSort.cpp
+
 ///////////////////////////////////////////////////////////////
 
 template<typename T>void BubbleSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
@@ -28,7 +29,6 @@ template<typename T>void BubbleSort<T>::sort(T array[],int leftIndex,int rightIn
 				//simpleBubbleSort(array,leftIndex,rightIndex);
 				//bidirectionalBubbleSort(array,leftIndex,rightIndex);
 				this->recursiveBidirectionalBubbleSort(array,leftIndex,rightIndex,true);
-				this->showArray(array,size);
 			}else{
 				std::cout << "Nao esta entrando!!" << std::endl;
 				
