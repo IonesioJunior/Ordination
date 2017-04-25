@@ -27,7 +27,6 @@ void InsertionSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
 	if(validateParams(array,leftIndex,rightIndex,size)){
 		//this->simpleInsertionSort(array,leftIndex,rightIndex);
 		this->recursiveInsertionSort(array,leftIndex,rightIndex,leftIndex);
-		this->showArray(array,size);
 	}else{
 		std::cout << "Entrando aqui!!" << std::endl;
 		//Do nothing

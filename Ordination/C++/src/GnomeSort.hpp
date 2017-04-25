@@ -27,7 +27,6 @@ void GnomeSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
 	if(validateParams(array,leftIndex,rightIndex,size)){
 		//this->simpleGnomeSort(array,leftIndex,rightIndex);
 		this->recursiveGnomeSort(array,leftIndex,rightIndex,leftIndex + 1);
-		this->showArray(array,size);
 	}else{
 		std::cout << "Nao era para entrar aqui!!" <<std::endl;
 	}

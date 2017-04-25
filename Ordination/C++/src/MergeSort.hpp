@@ -12,8 +12,7 @@ template<typename T> class MergeSort{
 		void merge(T array[],int leftIndex,int rightIndex,int size);
 		bool validateParams(T array[],int leftIndex,int rightIndex,int size);
 		void swap(T array[], int i,int j);
-		void showArray(T array[],int size);
-	
+		void showArray(T array[],int size);	
 };
 
 //MergeSort.cpp
@@ -39,7 +38,6 @@ void MergeSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
 template<typename T>
 void MergeSort<T>::sort(T array[],int size){
 			this->sort(array,0,size-  1,size);
-			this->showArray(array,size);
 		}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////

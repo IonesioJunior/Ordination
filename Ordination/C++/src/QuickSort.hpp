@@ -40,7 +40,6 @@ void QuickSort<T>::sort(T array[],int leftIndex,int rightIndex,int size){
 template<typename T>
 void QuickSort<T>::sort(T array[],int size){
 	this->sort(array,0,size - 1 ,size);
-	this->showArray(array,size);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
