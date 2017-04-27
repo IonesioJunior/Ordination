@@ -1,6 +1,12 @@
+'''
+	Author: Ionésio Junior
+'''
 #coding: utf-8
 from Sort import Sort
 
+'''
+	BubbleSort class implementation
+'''
 class BubbleSort(Sort):
 	pass
 

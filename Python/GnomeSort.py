@@ -1,6 +1,12 @@
+'''
+	Author: Ionésio Junior
+'''
 #coding: utf-8
 
 from Sort import Sort
+'''
+	GnomeSort implementation
+'''
 class GnomeSort(Sort):
 	pass
 	'''

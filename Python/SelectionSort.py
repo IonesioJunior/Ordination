@@ -1,5 +1,11 @@
+'''
+	Author: Ionésio Junior
+'''
 #coding: utf-8
 from Sort import Sort
+'''
+	SelectionSort implementation
+'''
 class SelectionSort(Sort):
 	pass
 	'''

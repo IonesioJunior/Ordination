@@ -1,7 +1,12 @@
+'''
+	Author: Ionésio Junior
+'''
 #coding: utf-8
 
 from Sort import Sort
-
+'''
+	InsertionSort implementation
+'''
 class InsertionSort(Sort):
 	pass
 	'''

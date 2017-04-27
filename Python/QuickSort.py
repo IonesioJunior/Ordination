@@ -1,7 +1,13 @@
+'''
+	Author: Ionésio Junior
+'''
 #coding : utf- 8
 
 from Sort import Sort
 
+'''
+	 QuickSort implementation
+'''
 class QuickSort(Sort):
 	pass
 	'''
