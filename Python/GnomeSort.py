@@ -1,20 +1,19 @@
-'''
-	Author: Ionésio Junior
-'''
 #coding: utf-8
 
 from Sort import Sort
-'''
-	GnomeSort implementation
-'''
+
+__author__ = "Ionesio Junior"
+
 class GnomeSort(Sort):
-	pass
-	'''
-		Generic Sort
-		algorithm.sort(array) -> return complete ordered array
-		algorithm.sort(array,leftLimit,rightLimit) -> return partially ordered array
-	'''	
+	
+	''' Gnome sort class have many ways to implement gnome sort algorithm idea '''
+	
+
 	def sort(self,array ,leftIndex = 0,rightIndex = None):
+        	'''Generic Sort
+                algorithm.sort(array) -> return complete ordered array
+                algorithm.sort(array,leftLimit,rightLimit) -> return partially ordered array
+        	'''  
 		if(rightIndex == None):
 			rightIndex = len(array) - 1
 		if self.__validateParams(array,leftIndex,rightIndex):
@@ -22,10 +21,9 @@ class GnomeSort(Sort):
 			#self.__recursiveGnomeSort(array,leftIndex,leftIndex + 1 ,rightIndex)
 	
 	
-	'''
-		Simple iteractive Gnome Sort implementation
-	'''
+	
 	def __simpleGnomeSort(self,array,leftIndex,rightIndex):
+		''' Simple iteractive Gnome sort implementation '''
 		pivot = leftIndex +1
 		while(pivot <= rightIndex):
 			if(array[pivot] >= array[pivot -1]):
@@ -39,10 +37,9 @@ class GnomeSort(Sort):
 	
 	
 	
-	'''
-		Recursive Gnome Sort implementation
-	'''
+	
 	def __recursiveGnomeSort(self,array,leftIndex,pivot,rightIndex):
+		''' Recursive Gnome Sort implementation '''
 		if(pivot <= rightIndex):
 			if(array[pivot] >= array[pivot - 1]):
 				self.__recursiveGnomeSort(array,leftIndex,pivot + 1 , rightIndex)
@@ -53,10 +50,9 @@ class GnomeSort(Sort):
 				else:
 					self.__recursiveGnomeSort(array,leftIndex,pivot + 1 ,rightIndex)
 
-	'''
-		This method verify if parameters are valid if some parameter is not valid the method returns false		
-	'''
+	
 	def __validateParams(self,array,leftIndex,rightIndex):
+	        ''' This method verify if parameters are valid if some parameter is not valid the method returns false '''
 		if(array == None or leftIndex < 0 or rightIndex > len(array) - 1 or leftIndex > rightIndex):
 			return False
 		else:

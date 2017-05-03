@@ -1,20 +1,18 @@
-'''
-	Author: Ionésio Junior
-'''
+
 #coding: utf-8
 
 from Sort import Sort
-'''
-	MergeSort implementation
-'''
+
+__author__ = "Ionesio Junior"
+
 class MergeSort(Sort):
-	pass
-	'''
-		Generic Sort
-		algorithm.sort(array) -> return complete ordered array
-		algorithm.sort(array,leftLimit,rightLimit) -> return partially ordered array
-	'''
+	''' Merge sort algorithm implementation '''
+	
 	def sort(self,array,leftIndex = 0 , rightIndex= None):
+        	'''Generic Sort
+                algorithm.sort(array) -> return complete ordered array
+                algorithm.sort(array,leftLimit,rightLimit) -> return partially ordered array
+        	'''
 		if(rightIndex == None):
 			rightIndex = len(array) - 1
 		if self.__validateParams(array,leftIndex,rightIndex):
@@ -22,10 +20,10 @@ class MergeSort(Sort):
 			self.sort(array,leftIndex,mid)
 			self.sort(array,mid +1,rightIndex)
 			self.__merge(array,leftIndex,rightIndex)
-	'''
-		This method will order and merge two parts of same array
-	'''
+	
+
 	def __merge(self,array,leftIndex,rightIndex):
+		''' This method will order and merge two parts of same array '''
 		mid = (leftIndex + rightIndex) / 2
 		leftArray = array[leftIndex:mid +1]
 		rightArray = array[mid +1: rightIndex + 1]
@@ -49,10 +47,9 @@ class MergeSort(Sort):
 			j = j + 1
 			leftIndex = leftIndex + 1
 
-	'''
-		This method verify if parameters are valid if some parameter is not valid the method returns false
-	'''
+	
 	def __validateParams(self,array,leftIndex,rightIndex):
+		''' This method verify if parameters are valid,if some parameter isn't valid the method returns false '''	
 		if(array == None or leftIndex < 0 or rightIndex > len(array) - 1 or leftIndex >= rightIndex):
 			return False
 		else:
