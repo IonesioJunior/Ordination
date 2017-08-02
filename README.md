@@ -1,6 +1,6 @@
-# Ordination
+﻿# Ordination
 
-  Sort algorithms are very basic and important algorithms in computational world. In big data era, with billions of data in clouds and systems, is essential organize and sort data using fast and effective algorithms.
+  Sort algorithms are very basic and important algorithms in computational world. In age of big data, with billions of data in clouds and systems, is essential organize and sort data using fast and effective algorithms.
 
 ## Language Implementations
 
