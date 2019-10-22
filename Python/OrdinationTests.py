@@ -6,6 +6,7 @@ from InsertionSort import InsertionSort
 from GnomeSort import GnomeSort
 from MergeSort import MergeSort
 from QuickSort import QuickSort
+from BogoSort import BogoSort
 
 
 class OrdinationTest(unittest.TestCase):
@@ -24,7 +25,8 @@ class OrdinationTest(unittest.TestCase):
 		#self.algorithm = InsertionSort()
 		#self.algorithm = GnomeSort()
 		#self.algorithm = MergeSort()
-		self.algorithm = QuickSort()
+		#self.algorithm = QuickSort()
+		self.algorithm = BogoSort()
 	
 	def genericTest(self,array):
 		copy = array[:]
